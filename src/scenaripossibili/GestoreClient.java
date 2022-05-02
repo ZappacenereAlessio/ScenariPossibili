@@ -12,7 +12,7 @@ public class GestoreClient {
 			String str = c.Leggi();
 			CountDown cd = new CountDown(10);
 			cd.start();
-			System.out.println("Server: messaggio metodo leggi(): "+str);
+			System.out.println("Metodo Leggi(): "+str);
 			c.Scrivi("sinc");
 		} catch (UnknownHostException e) {
 			// TODO Auto-generated catch block

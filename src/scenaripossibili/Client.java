@@ -25,7 +25,7 @@ public class Client {
 	}
 	
 	public String Leggi() {
-		String msg="";
+		String msg=" ";
 		
 		try {
 			msg = br.readLine();
@@ -38,7 +38,8 @@ public class Client {
 	
 	public void Scrivi(String msg) {
 		try {
-			bw.write(msg);
+			bw.write(msg+"\n");
+			bw.flush();
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
